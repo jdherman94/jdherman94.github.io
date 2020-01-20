@@ -41,55 +41,88 @@
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!----------------------------------------------------------------->
+    <div class="navbar navbar-inverse navbar-fixed-top">
 
+      <div class="container">
+        <!----------------------------------------------------------------------------------->
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" display:'flex-space' data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"><a href='index.html'>Home</a></span>
+            <span class="icon-bar"><a href='me.html#About'>About</a></span>
+            <span class="icon-bar"><a href='me.html#Contact'>Contact</a></span>
+            <span class="icon-bar"><a href='https://linkedin.com/in/joshua-herman-60358789'>LinkedIn</a></span>
+
+          </button>
+
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <!---------------------------------------------------------------------->
+
+        <!---------------------------------------------------------------------->
+      </div>
+      <!---------------------------------------------------------------------------->
+    </div>
 
 
     <body>
       <h1> DMD for Foreground-Background Separation, by Joshua Herman</h1>
-      <div class='mt-0 border-bottom'>
-      <p>In this project, a surveilance video was processed through the method of Dynamic Mode Decomposition (DMD), in order to become separated into a set of modes, which are
-      kind of like a set of videos that can each be represented by a mathematical function. In the latest iteration of this project, the surveillance video was first downgraded to
-    a grey color scheme and was then reduced in resolution by a factor of 3 in both width and height. Then only every tenth picture extracted from the video was considered.
-  The considered pictures were split into a sequence of four sets, labeled 0,1,2,3. Then each of these sets, which contained 200 pictures, were run through the DMD algorithm.
-For each set run through DMD, 198 modes were returned.</p>
+      <div class='mt-0 border-bottom container'>
+      <p> This project in Dynamic Mode Decomposition is focused on the application of a relatively new time series decomposition method called Dynamic Mode Decomposition (DMD), for the purpose
+        of foreground-background separation in surveillance video. The primary goal is to replicate the procedure discussed in the following research paper by J. Grosek and J. Nathan Kutz [1], but on a different surveillance video. </p>
+      The surveillance video was taken from the VIRAT Release 1 Sample Database [2], and is survellance of some sort of exchange happening in a parking lot. DMD was used to have the video eparated into a set of modes, which are
+      kind of like a set of videos that can each be represented by a mathematical function.</p>
+      <p>In the latest iteration of this project, the surveillance video was first downgraded to
+   a grey color scheme and was then reduced in resolution by a factor of 3 in both width and height. Then only every tenth picture extracted from the video was considered.
+ The considered pictures were split into a sequence of four sets, labeled 0,1,2,3. Then each of these sets, which contained 200 pictures, were run through the DMD algorithm.
+For each set run through DMD, 198 modes were returned. </p>
 
-<p>The video to be considered for the analysis is from the VIRAT Release 1 Sample Database. To quote the VIRAT website https://viratdata.org/, VIRAT is "A Large-scale Benchmark Dataset for Event Recognition in Surveillance Video" by Sangmin Oh, Anthony Hoogs, Amitha Perera, Naresh Cuntoor, Chia-Chih Chen, Jong Taek Lee, Saurajit Mukherjee, J.K. Aggarwal, Hyungtae Lee, Larry Davis, Eran Swears, Xiaoyang Wang, Qiang Ji, Kishore Reddy, Mubarak Shah, Carl Vondrick, Hamed Pirsiavash, Deva Ramanan, Jenny Yuen, Antonio Torralba, Bi Song, Anesco Fong, Amit Roy-Chowdhury, and Mita Desai, in Proceedings of IEEE Comptuer Vision and Pattern Recognition (CVPR), 2011."</p>
+  </body>
+  <body>
 
-<p>For each set, the mode/video that involves the least change (is closest to a stand-still picture), is considered to be the background mode. The foreground mode is the sum of all of the remaining modes.
-This is also the same as subtracting the background mode from the original video for its set. Below are the three types of considered videos for each of the four sets: Full,foreground, and background.</p>
+<p> For each set, the mode/video that involves the least change (is closest to a stand-still picture), is considered to be the background mode. The foreground mode is the sum of all of the remaining modes.
+This is also the same as subtracting the background mode from the original
+video for its set. Below are the three types of considered videos for each
+ of the four sets: Full,foreground, and background.</p>
+</body>
+
+
+
 </div>
-      <div class="media">
+<div >
+    <body>
+        <div class="media">
 
         <img class="d-flex align-self-start mr-3" src="gifs/Full-Set0.gif" alt="Generic placeholder image">
 
-        <div class="media-body">
+          <div class="media-body">
 
-          <h5 class="mt-0">Set 0 Full Video</h5>
+            <h5 class="mt-0">Set 0 Full Video</h5>
 
+
+          </div>
 
         </div>
-
-      </div>
 
     </body>
 
 
 
-    <body>
+  <body>
 
-      <div class="media">
+    <div class="media">
 
-        <img class="d-flex align-self-start mr-3" src="gifs/ForegroundVid-Set0.gif" alt="Generic placeholder image">
+      <img class="d-flex align-self-start mr-3" src="gifs/ForegroundVid-Set0.gif" alt="Generic placeholder image">
 
-        <div class="media-body">
+      <div class="media-body">
 
-          <h5 class="mt-0">Set 0 Foreground Video</h5>
-
-        </div>
+        <h5 class="mt-0">Set 0 Foreground Video</h5>
 
       </div>
 
-    </body>
+    </div>
+
+  </body>
 
 
 
@@ -109,8 +142,9 @@ This is also the same as subtracting the background mode from the original video
       </div>
 
     </body>
+</div>
 
-
+<div>
 
     <body>
 
@@ -164,8 +198,9 @@ This is also the same as subtracting the background mode from the original video
       </div>
 
     </body>
+</div>
 
-
+<div>
 
     <body>
 
@@ -200,7 +235,7 @@ This is also the same as subtracting the background mode from the original video
         </div>
 
       </div>
-
+    </body>
       <body>
 
         <div class="media border-bottom">
@@ -215,7 +250,9 @@ This is also the same as subtracting the background mode from the original video
           </div>
 
         </div>
-
+      </body>
+</div>
+<div>
 
 
         <body>
@@ -273,12 +310,97 @@ This is also the same as subtracting the background mode from the original video
 
         </body>
 
+</div>
+<h2> General overview of differences between several project analyses.</h2>
+  <div class='container fluid'>
 
+    <div class='row'>
+    <div class='col-md-3 card flex'>
+      Attempt Descriptor
+    </div>
+    <div class='col-md-2 card flex'>
+      Paper first analysis
+    </div>
+    <div class='col-md-2 card flex'>
+      Paper second analysis
+    </div>
+    <div class='col-md-2 card flex'>
+      Latest Analysis Jan 6
+    </div>
+    <div class='col-md-2 card flex'>
+      Original Research Paper
 
+    </div>
+  </div>
 
+    <div class='row'>
+    <div class='col-md-3 card flex'>
+      Preprocessing Difference
+    </div>
+    <div class='col-md-2 card flex'>
+      My paper's first attempt used
+    </div>
+    <div class='col-md-2 card flex'>
+      My paper's second attempt used
+    </div>
+    <div class='col-md-2 card flex'>
+      Greyscale reduced in resolution by factor of 3. consideredEvery 10th picture. Have 4 sets of
+      200 images each.
+    </div>
+    <div class='col-md-2 card flex'>
+      Greyscale reduced and resolution downsampling to 11520 pixels
+      and sets of 30 images each.[1]
 
-    </body>
+    </div>
+  </div>
+  <div class='row'>
+  <div class='col-md-3 card flex'>
+    DMD and Postprocessing Difference
+  </div>
+  <div class='col-md-2 card flex'>
+    My paper's first attempt used
+  </div>
+  <div class='col-md-2 card flex'>
+    My paper's second attempt used
+  </div>
+  <div class='col-md-2 card flex'>
+    Used sparse svd solver to reduce memory errors. Pick background mode that makes the dynamic terms as static as possible. Subtracted static background picture
+    from original set of pictures to get foreground. Used mod 256 to keep all pixels in allowed range.
+    Filtered out pixel values in foreground that are above and below certain threshold to make background look blank.
+    Analyzed modes individualy using exponentialy decaying cosine model attained from phase-magnitude analysis of complex modes.
+  </div>
+  <div class='col-md-2 card flex'>
+    Dynamic Mode decomposition mathematics is same at a theoretical level, though code is not supplied.
+    Picks background mode that makes \omega smallest. Subtract real part of complex background mode from original video to get foreground. Add negative values in foreground back to background to get pixels in range. Results
+    shown in greyscale with brightness increased by 10 in foreground.[1]
+  </div>
+  </div>
+
+  <div class='row'>
+
+  <div class='col-md-3 card flex'>
+  Other Code Differences
+  </div>
+  <div class='col-md-2 card flex'>
+  My paper's first attempt used
+  </div>
+  <div class='col-md-2 card flex'>
+  My paper's second attempt used
+  </div>
+  <div class='col-md-2 card flex'>
+  My Most recent attempt used
+  </div>
+  <div class='col-md-2 card flex'>
+  The original research paper used
+
+  </div>
+  </div>
+
+  </div>
     <div>
+      <p>[1] J. Grosek and J. N. Kutz Dynamic Mode Decomposition for Real-Time Back-
+ground/Foreground Separation in Video. arXiv: 1404.7592vl [cs.SV] 30 Apr 2014</p>
+      <p>[2] The video to be considered for the analysis is from the VIRAT Release 1 Sample Database. To quote the VIRAT website https://viratdata.org/, VIRAT is "A Large-scale Benchmark Dataset for Event Recognition in Surveillance Video" by Sangmin Oh, Anthony Hoogs, Amitha Perera, Naresh Cuntoor, Chia-Chih Chen, Jong Taek Lee, Saurajit Mukherjee, J.K. Aggarwal, Hyungtae Lee, Larry Davis, Eran Swears, Xiaoyang Wang, Qiang Ji, Kishore Reddy, Mubarak Shah, Carl Vondrick, Hamed Pirsiavash, Deva Ramanan, Jenny Yuen, Antonio Torralba, Bi Song, Anesco Fong, Amit Roy-Chowdhury, and Mita Desai, in Proceedings of IEEE Comptuer Vision and Pattern Recognition (CVPR), 2011."</p>
 
     <a href=Rev010520.pdf id='paper'>Click to see Revised Project Report (as of January 6th.)</a>
     </div>
