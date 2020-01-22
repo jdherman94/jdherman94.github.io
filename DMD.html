@@ -8,7 +8,7 @@
     <title>DMD for foreground background separation</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="DMD.css" rel='stylesheet'>
     <style>
@@ -311,92 +311,8 @@ video for its set. Below are the three types of considered videos for each
         </body>
 
 </div>
-<h2> General overview of differences between several project analyses.</h2>
-  <div class='container fluid'>
 
-    <div class='row'>
-    <div class='col-md-3 card flex'>
-      Attempt Descriptor
-    </div>
-    <div class='col-md-2 card flex'>
-      Paper first analysis
-    </div>
-    <div class='col-md-2 card flex'>
-      Paper second analysis
-    </div>
-    <div class='col-md-2 card flex'>
-      Latest Analysis Jan 6
-    </div>
-    <div class='col-md-2 card flex'>
-      Original Research Paper
 
-    </div>
-  </div>
-
-    <div class='row'>
-    <div class='col-md-3 card flex'>
-      Preprocessing Difference
-    </div>
-    <div class='col-md-2 card flex'>
-      My paper's first attempt used
-    </div>
-    <div class='col-md-2 card flex'>
-      My paper's second attempt used
-    </div>
-    <div class='col-md-2 card flex'>
-      Greyscale reduced in resolution by factor of 3. consideredEvery 10th picture. Have 4 sets of
-      200 images each.
-    </div>
-    <div class='col-md-2 card flex'>
-      Greyscale reduced and resolution downsampling to 11520 pixels
-      and sets of 30 images each.[1]
-
-    </div>
-  </div>
-  <div class='row'>
-  <div class='col-md-3 card flex'>
-    DMD and Postprocessing Difference
-  </div>
-  <div class='col-md-2 card flex'>
-    My paper's first attempt used
-  </div>
-  <div class='col-md-2 card flex'>
-    My paper's second attempt used
-  </div>
-  <div class='col-md-2 card flex'>
-    Used sparse svd solver to reduce memory errors. Pick background mode that makes the dynamic terms as static as possible. Subtracted static background picture
-    from original set of pictures to get foreground. Used mod 256 to keep all pixels in allowed range.
-    Filtered out pixel values in foreground that are above and below certain threshold to make background look blank.
-    Analyzed modes individualy using exponentialy decaying cosine model attained from phase-magnitude analysis of complex modes.
-  </div>
-  <div class='col-md-2 card flex'>
-    Dynamic Mode decomposition mathematics is same at a theoretical level, though code is not supplied.
-    Picks background mode that makes \omega smallest. Subtract real part of complex background mode from original video to get foreground. Add negative values in foreground back to background to get pixels in range. Results
-    shown in greyscale with brightness increased by 10 in foreground.[1]
-  </div>
-  </div>
-
-  <div class='row'>
-
-  <div class='col-md-3 card flex'>
-  Other Code Differences
-  </div>
-  <div class='col-md-2 card flex'>
-  My paper's first attempt used
-  </div>
-  <div class='col-md-2 card flex'>
-  My paper's second attempt used
-  </div>
-  <div class='col-md-2 card flex'>
-  My Most recent attempt used
-  </div>
-  <div class='col-md-2 card flex'>
-  The original research paper used
-
-  </div>
-  </div>
-
-  </div>
     <div>
       <p>[1] J. Grosek and J. N. Kutz Dynamic Mode Decomposition for Real-Time Back-
 ground/Foreground Separation in Video. arXiv: 1404.7592vl [cs.SV] 30 Apr 2014</p>
