@@ -1,0 +1,75 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Neural Networks with Multi-Valued Neurons</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="NN_MVNs.css" rel='stylesheet'>
+    <style>
+
+      body {padding-top: 50px;
+            padding-left: 50px;
+            padding-right:50px;
+            padding-bottom:50px}
+
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--https://realpython.com/getting-started-with-bootstrap-3/-->
+
+  </head>
+
+    <!---------------------------------------------------------------->
+
+    <script src="bootstrap/dist/js/jquery.js"></script>
+
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" display:'flex-space' data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"><a href='index.html'>Home</a></span>
+            <span class="icon-bar"><a href='me.html#About'>About</a></span>
+            <span class="icon-bar"><a href='contact.html#Contact'>Contact</a></span>
+            <span class="icon-bar"><a href='https://linkedin.com/in/joshua-herman-60358789'>LinkedIn</a></span>
+
+          </button>
+
+          <a class="navbar-brand" href="#"></a>
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <!-------------------------------->
+
+<a href="https://drive.google.com/file/d/1Tm7PuesvLCXAE4px00kuZ_jwvPqGyOjn/view" class="btn btn-primary btn-lg " tabindex="-1" role="button" aria-disabled="true">A Convolutional Neural Network with Multi-Valued Neurons: a Modified Learning Algorithm and Analysis of Performance</a>
+<p>I. Aizenberg, J. Herman and A. Vasko, "A Convolutional Neural Network with Multi-Valued Neurons: a Modified Learning Algorithm and Analysis of Performance," 2022 IEEE 13th Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON), New York, NY, NY, USA, 2022, pp. 0585-0591, doi: 10.1109/UEMCON54665.2022.9965659.
+Abstract: In this paper, some important modifications to a learning algorithm of a convolutional neural network with multivalued neurons (CNNMVN) are introduced. CNNMVN learning is derivative free, and it is based on the generalized error-correction learning rule. Thus, the error backpropagation for this network has its specific features. Modifications, which are introduced in this paper to the error backpropagation, make it possible to improve performance of CNNMVN, speed up its learning process and improve its generalization capability. It is also analyzed which filters are utilized by the convolutional kernels upon completion of the learning process. We also studied which input/output mappings are finally utilized by neurons in a fully connected part of CNNMVN, namely by neurons in its hidden and output layers. We also analyzed how different kinds of pooling affect the learning process and generalization capability of CNNMVN. The simulation results are used to illustrate findings of the paper.
+URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9965659&isnumber=9965624<\p>
+<div>
+<br /><br />
+  <a href=index.html>Return to Home Page </a>
+</div>
