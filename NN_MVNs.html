@@ -7,7 +7,7 @@
 
   <head>
 
-    <title>Neural Networks with Multi-Valued Neurons</title>
+    <title>Complex-Valued Neural Networks with Multi-Valued Neurons</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
@@ -71,6 +71,16 @@
   Modifications, which are introduced in this paper to the error backpropagation, make it possible to improve performance of CNNMVN, speed up its learning process and improve its generalization capability. It is also analyzed which filters are utilized by the convolutional kernels upon completion of the learning process.
   We also studied which input/output mappings are finally utilized by neurons in a fully connected part of CNNMVN, namely by neurons in its hidden and output layers. We also analyzed how different kinds of pooling affect the learning process and generalization capability of CNNMVN. The simulation results are used to illustrate findings of the paper.
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9965659&isnumber=9965624<\p>
+  class="btn btn-primary btn-lg " tabindex="-1" role="button" aria-disabled="true">On Complex Valued Neural Networks with Multivalued Neurons: MLMVNs and CNNMVNs</a>
+    <p>Joshua Herman, On Complex Valued Neural Networks with Multivalued Neurons: MLMVNs and CNNMVNs, Master Thesis, Manhattan College, May 2023
+     <p>This Thesis explores the derivation of and application to an area of image processing of both Multi- Layered Neural Networks with Multi-Valued Neurons (MLMVNs) and Convolutional Neural Networks with Multi-Valued Neurons (CNNMVNs). MLMVNs will specifically be applied to
+deblurring and denoising, while CNNMVNs will be applied to classification. The deblurring task is, specifically, restoration from horizontal uniform motion blur, while the denoising tasks are respectively removal of Speckle Noise and Impulse Noise. One difference of this Thesis from prior published works relating to the MLMVNs is that the usage of MLMVNs for debluring has not
+been previously discussed as far as we are aware, and the collection of image patches filtered from speckle noise or impulse noise into one full size image has not been previously attempted in published literature using median averaging over overlapping pixels in these applications. It is worth noting that some improvements have been seen when implementing the MLMVN as an Impulse Noise Filter
+using median averaging over overlapping pixels instead of mean averaging over overlapping pixels to collect the filtered image patches. Also, this method has continued to show comparable or improved results over existing methods such as the Differential Rank Impulse Noise Detector (DRID) for removing impulse noise and Block Matching 3D Filtering (BM3D) for
+removing Speckle Noise. However, the MLMVN for debluring motion blured images with one hidden layer has not been shown to be an improvement over, or to yield results comparable to, using the Wiener Deconvolution Filter. The CNNMVN with one convolutional layer has been shown to perform relatively well for classifying the Modified National Institute of Standards and Technology
+database (MNIST) and Fashion-MNIST (FMNIST) when using the version of the algorithm that applies batch learning for multiple samples. However, using the single-sample batch algorithm compares better to using the multi-sampled batch CNNMVN on the same MNIST data set. The multi-sample algorithm is faster than the single-sample algorithm. The derivation for the
+backpropagation algorithms in the MLMVN and the derivation for the backprogagation algorithm in the CNNMVN, which includes our original derivation for modified normalization factors based on edge normalization, is done in this Thesis. This modified algorithm for backpropagation in the CNNMVN was first published in the above citation. Derivations for the batch algorithm for both MLMVN and
+CNNMVN will also be discussed, as will a modified version of it that we experimented with for the CNNMVN.
 <div>
 <br /><br />
   <a href=index.html>Return to Home Page </a>
